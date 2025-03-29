@@ -6,4 +6,5 @@ const footer = () => {
   )
 }
 //yash
+//tirth
 export default footer
