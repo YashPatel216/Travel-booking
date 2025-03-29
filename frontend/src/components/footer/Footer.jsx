@@ -5,5 +5,5 @@ const footer = () => {
     <div>footer</div>
   )
 }
-
+//yash
 export default footer
