@@ -9,6 +9,7 @@ import worldImg from '../assets/images/world.png'
 import SearchBar from '../shared/SearchBar';
 import ServiceList from '../services/ServiceList';
 import FeaturedTourList from '../Featured-tours/FeaturedTourList';
+import experienceImg from  "../assets/images/experience.png"
 const Home = () => {
   return (
     <>
@@ -68,7 +69,37 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-
+<section>
+  <Container>
+    <Row>
+      <Col lg='6'>
+      <div className="experience__content">
+        <Subtitle subtitle={'Experience'}></Subtitle>
+        <h2>With Our all experience <br/> we will serve you </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>
+          Saepe ducimus velit illum ut tempore ad consequuntur nobis atque fuga necessitatibus.</p>
+        </div>
+        <div className="counter__wrapper d-flex align-item-center gap-5">
+          <div className="counter__box">
+            <span>12k+</span>
+            <h6>Successfull Trip</h6>
+          </div>
+          <div className="counter__box">
+            <span>2k+</span>
+            <h6>Regular Clients</h6>
+          </div>
+          <div className="counter__box">
+            <span>10</span>
+            <h6>Years Experience </h6>
+          </div>
+        </div>
+        </Col>
+      <Col lg='6'>
+      <div className="experience__img">
+        <img src={experienceImg} /></div></Col>
+    </Row>
+  </Container>
+</section>
     </>
   )
 };
