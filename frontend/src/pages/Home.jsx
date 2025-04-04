@@ -11,6 +11,7 @@ import ServiceList from '../services/ServiceList';
 import FeaturedTourList from '../Featured-tours/FeaturedTourList';
 import experienceImg from  "../assets/images/experience.png"
 import MasonryImagesGallery from '../components/image-gallery/MasonryImagesGallery';
+import Testimonials from '../components/Testimonial/Testimonial';
 const Home = () => {
   return (
     <>
@@ -113,6 +114,21 @@ const Home = () => {
       </Col>
     </Row>
   </Container>
+</section>
+
+
+<section>
+<Container>
+<Row>
+<Col lg='12'>
+<Subtitle subtitle={'Fans Love'} />
+<h2 className="testimonial_title">What our fans say about us</h2>
+</Col>
+<Col lg='12'>
+  <Testimonials/>
+</Col>
+</Row>
+</Container>
 </section>
     </>
   )
