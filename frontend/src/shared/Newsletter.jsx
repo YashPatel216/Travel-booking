@@ -1,6 +1,7 @@
 import React from 'react'
 import {Container,Row,Col } from 'reactstrap';
 import maleTourist from '../assets/images/male-tourist.png';
+import './newsletter.css'
 const Newsletter = () => {
 return  (
     <section className="newsletter">
