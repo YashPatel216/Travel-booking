@@ -16,8 +16,8 @@ const Header = () => {
   useEffect(() => {
     const stickyHeaderFunc = () => {
       if (
-        document.body.scrollTop > 80 ||
-        document.documentElement.scrollTop > 80
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
       ) {
         if (headerRef.current) {
           headerRef.current.classList.add('sticky_header');
