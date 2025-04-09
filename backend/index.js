@@ -10,10 +10,8 @@ const port = process.env.PORT || 8000;
 
 const connect = async () => {
     try {
-        await mongoose.connect(process.env.MONGO_URL,{
-            useNewUrlParser:true,
-            useUnifiedTopology:true
-        })
+        mongoose.connect('mongodb://localhost:27017/mydb');
+
 
         console.log('MongoDb Database connected')
     }
