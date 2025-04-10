@@ -38,7 +38,22 @@ export const updateTour =async(req,res)=>{
 }
 export const deleteTour =async(req,res)=>{
     try{
-
+        const id=req.params.id
+        try{
+            await Tour.findByIdAndDelete(id);
+    
+            res.status(200).json({
+                success:true,
+                message:'sucessfully deleted',
+                data:updateTour,
+            });
+        }
+        catch(err){
+            res.status(500).json({
+                success:false,
+                message:'Failed To delete',
+                data:savedTour});
+        }
     }
     catch(err){
         
@@ -46,7 +61,22 @@ export const deleteTour =async(req,res)=>{
 }
 export const getSingleTour =async(req,res)=>{
     try{
-
+        const id=req.params.id
+        try{
+            const tour=await Tour.findById(id);
+    
+            res.status(200).json({
+                success:true,
+                message:'sucessfully deleted',
+                data:tour
+            });
+        }
+        catch(err){
+            res.status(500).json({
+                success:false,
+                message:'Failed To delete',
+                data:savedTour});
+        }
     }
     catch(err){
         
