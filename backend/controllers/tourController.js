@@ -67,14 +67,14 @@ export const getSingleTour =async(req,res)=>{
     
             res.status(200).json({
                 success:true,
-                message:'sucessfully deleted',
+                message:'sucessfully Fetched',
                 data:tour
             });
         }
         catch(err){
-            res.status(500).json({
+            res.status(404).json({
                 success:false,
-                message:'Failed To delete',
+                message:'Not found',
                 data:savedTour});
         }
     }
@@ -83,10 +83,24 @@ export const getSingleTour =async(req,res)=>{
     }
 }
 export const getAllTour =async(req,res)=>{
-    try{
 
+    //for pagination
+    const page=parseInt(req.query.page);
+    
+    try{
+        const tours= await Tour.find({}).skip(page*8).limit(8)
+
+        res.status(200).json({
+            success:true,
+            count:tours.length,
+            message:'sucessfully',
+            data:tours
+        })
     }
     catch(err){
-        
+        res.status(404).json({
+            success:false,
+            message:'Not found'
+            });
     }
 }
