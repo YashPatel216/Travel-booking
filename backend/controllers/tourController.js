@@ -1,6 +1,4 @@
 import Tour from '../models/Tour.js'
-
-
 export const createTour = async(req,res)=>{
     const newTour =new Tour(req.body)
 

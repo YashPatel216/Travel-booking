@@ -9,9 +9,9 @@ router.post('/',createTour);
 router.put('/:id',updateTour);
 //delete new tour
 router.delete('/:id',deleteTour);
-//create new tour
+//get single toour
 router.get('/:id',getSingleTour);
-//create new tour
+//get all tours
 router.get('/',getAllTour);
 
 router.get("/search/getTourBySearch", getTourBySearch );
