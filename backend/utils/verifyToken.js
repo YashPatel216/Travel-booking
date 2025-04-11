@@ -22,7 +22,7 @@ export const verifyUser = (req,res,next)=>{
             next();
         }
         else{
-            res.status(401).json({success:false, message:'You are not authenticated'});
+           return  res.status(401).json({success:false, message:'You are not authenticated'});
         }
     })
 }
@@ -35,7 +35,7 @@ export const verifyAdmin = (req,res,next)=>{
             next();
         }
         else{
-            res.status(401).json({success:false, message:'You are not authorize'});
+            return res.status(401).json({success:false, message:'You are not authorize'});
         }
     })
 }
