@@ -3,8 +3,6 @@ import { getSingleUser,deleteUser,updateUser, getAllUser } from '../controllers/
 import { verifyUser } from '../utils/verifyToken.js';
 const router=express.Router()
 
-
-
 //update new user
 router.put('/:id',verifyUser,updateUser);
 //delete new user
