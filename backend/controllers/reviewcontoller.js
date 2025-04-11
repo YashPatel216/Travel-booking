@@ -3,7 +3,7 @@ import Review from "../models/Review.js"
 
 export const createReview = async(req,res)=>
 {
-    const TourId=req.params.TourId
+    const TourId=req.params.tourId
     const newReview= new Review({...req.body})
     try{
         const savedReview =await newReview.save()
@@ -15,7 +15,6 @@ export const createReview = async(req,res)=>
     }
     catch(err)
     {
-        res.status(200).json({success:faled,message:'Failed to Submit'})
-
+        res.status(500).json({success:faled,message:'Failed to Submit'})
     }
 }

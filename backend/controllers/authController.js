@@ -52,7 +52,11 @@ export const login =async(req,res)=>{
     res.cookie('accessToken', token, {
     httpOnly: true,
     expires : token. expiresIn
-    }).status(200).json({success:true, message: 'successfully login', data:{ ...rest}} )
+    }).status(200).json({success:true, message: 'successfully login',
+        token,
+         data:{ ...rest},
+         role,})
+         
 }
     catch(err){
         res.status(404).json({success : false, message: 'Failed to login'})
