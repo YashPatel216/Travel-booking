@@ -7,13 +7,13 @@ export const register =async(req,res)=>{
     try{
 
         //hashing password
-        // const salt = bcrypt.genSaltSync(10);
-        // const hash=bycrypt.hashSync(req.body.password,salt);
+        const salt = bycrypt.genSaltSync(10)
+        const hash=bycrypt.hashSync(req.body.password,salt);
 
         const newUser = new User({
             username:req.body.username,
             email:req.body.email,
-            password:req.body.password,
+            password:hash,
             photo:req.body.photo    
         }) 
 
@@ -35,7 +35,7 @@ export const login =async(req,res)=>{
     return res.status(404).json({success : false, message: 'User not found'})
     }
     // if user is exist then check the password or compare the password
-    const checkCorrectPassword=bycrypt.compare(req.body.password,user.password);
+    const checkCorrectPassword=await bycrypt.compare(req.body.password,user.password);
 
     //if password is incorrect
     if(!checkCorrectPassword){
