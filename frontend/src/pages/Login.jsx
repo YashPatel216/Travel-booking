@@ -1,6 +1,6 @@
-import React,{useState,useContext} from 'react'
+import React, { useState, useContext } from 'react'
 import { Container, Col, Row, Form, FormGroup, Button } from 'reactstrap'
-import { Link ,useNavigate} from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import '../styles/login.css'
 
 import loginImg from '../assets/images/login.png'
@@ -11,11 +11,11 @@ import { BASE_URL } from '../utils/config'
 const Login = () => {
 
   const [credentials, setCredentials] = useState({
-    email:'',
-    password:''
+    email: '',
+    password: ''
   });
 
-  const {dispatch} = useContext(AuthContext)
+  const { dispatch } = useContext(AuthContext)
   const navigate = useNavigate()
 
   const handleChange = e => {
@@ -23,26 +23,28 @@ const Login = () => {
   };
 
   const handleClick = async e => {
-    e.preventDefault(); 
-    dispatch({type:'LOGIN_START'})
+    e.preventDefault();
+    dispatch({ type: 'LOGIN_START' })
     try {
-        const res =await fetch(${BASE_URL}/auth/login,{
-        method:'post',
-        headers:{
-          'content-type':'application/json'
+      const res = await fetch(`${BASE_URL}/auth/login`, {
+        method: 'post',
+        headers: {
+          'content-type': 'application/json'
         },
-        credentials:'include',
-        body:JSON.stringify(credentials)
-        })
+        credentials: 'include',
+        body: JSON.stringify(credentials)
+      })
 
-        const result = await res.json()
-        if(!res.ok) {alert(result.message)
-        return;}
-        console.log(result.data)
-        dispatch({type:'LOGIN_SUCCESS',payload:result.data})
-        navigate("/")
+      const result = await res.json()
+      if (!res.ok) {
+        alert(result.message)
+        return;
+      }
+      console.log(result.data)
+      dispatch({ type: 'LOGIN_SUCCESS', payload: result.data })
+      navigate("/")
     } catch (err) {
-      dispatch({type:'LOGIN_FAILURE',payload:err.message})
+      dispatch({ type: 'LOGIN_FAILURE', payload: err.message })
     }
   };
   return (
@@ -71,7 +73,7 @@ const Login = () => {
                     <input type='password' placeholder='Password' required id='password' onChange={handleChange} />
 
                   </FormGroup>
-                  <Button className='btn secondry_btn auth_btn' type='submit'>Login</Button>
+                  <Button className='btn secondry__btn auth__btn' type='submit'>Login</Button>
                 </Form>
 
                 <p>Don't have account ? <Link to='/register'>Create</Link></p>
