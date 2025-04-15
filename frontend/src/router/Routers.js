@@ -5,12 +5,12 @@ import Home from '../pages/Home';
 import Tours from '../pages/Tours';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
-import Searchresult from '../pages/Searchresult';
-import Tourdetails from '../pages/Tourdetails';
+import Searchresult from '../pages/SearchResult';
+import Tourdetails from '../pages/TourDetails';
 import ThankYou from '../pages/ThankYou';
 
 
-const routers = () => {
+const Routers = () => {
   return (
      <Routes>
         <Route path='/' element={<Navigate to='/Home'/>} />
@@ -26,4 +26,4 @@ const routers = () => {
   );
 };
 
-export default routers;
+export default Routers;
