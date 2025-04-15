@@ -137,6 +137,7 @@ export const getFeaturedTour =async(req,res)=>{
     
     try{
         const tours= await Tour.find({featured:true}).populate('reviws').limit(8)
+      const tours= await Tour.find({featured:true}).populate('review').limit(8)
 
         res.status(200).json({
             success:true,
