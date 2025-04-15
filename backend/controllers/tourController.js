@@ -8,8 +8,12 @@ export const createTour = async(req,res)=>{
         success:true,
         message:'sucessfully created',
         data:savedTour});
-    }catch(err){
-        res.status(500).json({success:false,message:'Failed to create',data:savedTour})
+    }
+    catch(err){
+        res.status(500)
+        .json({
+        success:false,
+        message:'Failed to create'});
     }
 } 
 
