@@ -11,8 +11,8 @@ import { BASE_URL } from '../utils/config'
 const Login = () => {
 
   const [credentials, setCredentials] = useState({
-    email:undefined,
-    password:undefined
+    email:'',
+    password:''
   });
 
   const {dispatch} = useContext(AuthContext)
@@ -36,8 +36,8 @@ const Login = () => {
         })
 
         const result = await res.json()
-        if(!res.ok) alert(result.message)
-        
+        if(!res.ok) {alert(result.message)
+        return;}
         console.log(result.data)
         dispatch({type:'LOGIN_SUCCESS',payload:result.data})
         navigate("/")

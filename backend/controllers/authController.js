@@ -2,6 +2,7 @@ import User from "../models/User.js"
 import bycrypt from "bcryptjs"
 import jwt from 'jsonwebtoken'
 
+
 //user registration
 export const register =async(req,res)=>{
     try{
@@ -32,7 +33,7 @@ export const login =async(req,res)=>{
     const user = await User.findOne({email})
     // if user doesn't exist
     if(!user){
-    return res.status(404).json({success : false, message: 'User not found'})
+    return res.status(401).json({success : false, message: 'User not found'})
     }
     // if user is exist then check the password or compare the password
     const checkCorrectPassword=await bycrypt.compare(req.body.password,user.password);
@@ -51,7 +52,7 @@ export const login =async(req,res)=>{
     // set token in the browser cookies and send the response to the client
     res.cookie('accessToken', token, {
     httpOnly: true,
-    expires : token. expiresIn
+    expires : token.expiresIn
     }).status(200).json({success:true, message: 'successfully login',
         token,
          data:{ ...rest},
