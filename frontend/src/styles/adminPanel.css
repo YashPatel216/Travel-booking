@@ -1,0 +1,85 @@
+.admin-container {
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .admin-section {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .admin-section h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .admin-table th, .admin-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .admin-table th {
+    background-color: #f1f1f1;
+  }
+  
+  .tour-form input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .tour-form button {
+    padding: 10px 20px;
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .tour-form button:hover {
+    background-color: #0052cc;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .checkbox-label input {
+    margin-right: 8px;
+  }
+  
+  .delete-btn {
+    color: white;
+    background-color: #e74c3c;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+  

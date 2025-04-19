@@ -8,7 +8,8 @@ import Register from '../pages/Register';
 import Searchresult from '../pages/SearchResult';
 import Tourdetails from '../pages/TourDetails';
 import ThankYou from '../pages/ThankYou';
-
+import MyBookings from '../pages/my-Booking';
+import AdminPanel from '../pages/AdminPanel';
 
 const Routers = () => {
   return (
@@ -21,7 +22,8 @@ const Routers = () => {
         <Route path='/tours' element={<Tours/>} />
         <Route path='/tours/:id' element={<Tourdetails/>} />
         <Route path='/tours/search' element={<Searchresult/>} />
-
+        <Route path='/my-bookings' element={<MyBookings/>}/>
+        <Route path="/admin" element={<AdminPanel />} />
      </Routes>
   );
 };

@@ -24,7 +24,8 @@ const Login = () => {
 
   const handleClick = async e => {
     e.preventDefault();
-    dispatch({ type: 'LOGIN_START' })
+    dispatch({ type: 'LOGIN_START' });
+  
     try {
       const res = await fetch(`${BASE_URL}/auth/login`, {
         method: 'post',
@@ -33,20 +34,28 @@ const Login = () => {
         },
         credentials: 'include',
         body: JSON.stringify(credentials)
-      })
-
-      const result = await res.json()
+      });
+  
+      const result = await res.json();
       if (!res.ok) {
-        alert(result.message)
+        alert(result.message);
         return;
       }
-      console.log(result.data)
-      dispatch({ type: 'LOGIN_SUCCESS', payload: result.data })
-      navigate("/")
+  
+      // Hardcoded admin check
+      if (credentials.email === 'admin@gmail.com' && credentials.password === '12345') {
+        dispatch({ type: 'LOGIN_SUCCESS', payload: result.data });
+        navigate("/admin");
+      } else {
+        dispatch({ type: 'LOGIN_SUCCESS', payload: result.data });
+        navigate("/");
+      }
     } catch (err) {
-      dispatch({ type: 'LOGIN_FAILURE', payload: err.message })
+      dispatch({ type: 'LOGIN_FAILURE', payload: err.message });
     }
   };
+  
+  
   return (
     <section>
       <Container>
