@@ -62,6 +62,5 @@ export const AuthContextProvider =({children})=>{
         dispatch,
     }}>
     {children}
-        
     </AuthContext.Provider>
 }
