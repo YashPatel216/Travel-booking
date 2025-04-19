@@ -10,6 +10,7 @@ import Tourdetails from '../pages/TourDetails';
 import ThankYou from '../pages/ThankYou';
 import MyBookings from '../pages/my-Booking';
 import AdminPanel from '../pages/AdminPanel';
+import Payment from '../pages/Payment';
 
 const Routers = () => {
   return (
@@ -24,6 +25,8 @@ const Routers = () => {
         <Route path='/tours/search' element={<Searchresult/>} />
         <Route path='/my-bookings' element={<MyBookings/>}/>
         <Route path="/admin" element={<AdminPanel />} />
+        <Route path="/payment" element={<Payment />} />
+
      </Routes>
   );
 };

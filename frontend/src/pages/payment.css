@@ -1,0 +1,56 @@
+.payment-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    background: #f5f7fa;
+    padding: 2rem;
+  }
+  
+  .payment-card {
+    background-color: white;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    max-width: 420px;
+    width: 100%;
+  }
+  
+  .payment-title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  .payment-amount {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  .input-with-icon {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+  }
+  
+  .input-with-icon input {
+    padding-left: 2.5rem;
+  }
+  
+  .payment-message {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
