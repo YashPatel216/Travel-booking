@@ -9,7 +9,7 @@ import Newsletter from '../shared/Newsletter'
 import useFetch from '../hooks/useFetch'
 
 import { AuthContext } from '../context/AuthContext'
-import { BASE_URL } from '../utils/config'
+import { BASE_URL, IMAGE_URL } from '../utils/config'
 
 const Tourdetails = () => {
   const { id } = useParams();
@@ -85,7 +85,7 @@ const Tourdetails = () => {
           <Row>
             <Col lg='8'>
               <div className="tour__content">
-                <img src={photo} alt='img' />
+              <img src={`${IMAGE_URL}${photo}`} alt='img' />
                 <div className="tour__info">
                   <h2>{title}</h2>
                   <div className='d-flex align-items-center gap-5'>
