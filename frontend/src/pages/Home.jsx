@@ -79,8 +79,8 @@ const Home = () => {
       <div className="experience__content">
         <Subtitle subtitle={'Experience'}></Subtitle>
         <h2>With Our all experience <br/> we will serve you </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br/>
-          Saepe ducimus velit illum ut tempore ad consequuntur nobis atque fuga necessitatibus.</p>
+        <p>With years of trusted experience, we are committed to delivering the best travel services for every journey you take. <br/>
+         </p>
         </div>
         <div className="counter__wrapper d-flex align-item-center gap-5">
           <div className="counter__box">

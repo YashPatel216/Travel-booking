@@ -8,7 +8,6 @@ import userRoute from './routes/users.js'
 import authRoute from './routes/auth.js'
 import reviewRoute from './routes/reviews.js'
 import bookingRoute from './routes/bookings.js'
-import userRoutes from './routes/users.js';
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 8000;
@@ -16,10 +15,7 @@ const corsOptions ={
     origin:true,
     credentials:true
 }
-
 app.use('/tour-images', express.static('tour-images'));
-
-
 mongoose.set("strictQuery",false)
 const connect = async () => {
     try {
@@ -36,11 +32,10 @@ const connect = async () => {
 
     }
 }
-
-
 app.get("/", (req, res) => {
     res.send('api is working');
 });
+
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(cookieParser());
@@ -49,11 +44,6 @@ app.use('/api/v1/tours',tourRoute)
 app.use('/api/v1/auth',authRoute)
 app.use('/api/v1/review',reviewRoute)
 app.use('/api/v1/booking',bookingRoute)
-app.use('/api/users', userRoutes);
-app.use('/api/tours',tourRoute)
-
-
-
 app.listen(port, () => {
     connect();
     console.log('server is listening on port', port);

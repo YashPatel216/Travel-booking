@@ -9,17 +9,17 @@ const serviceData=[
   {
     imgUrl:weatherImg,
     title:"Calculate weather",
-    desc:"Lorem ipsum dolor sit amet ,"
+    desc:"We provide accurate and real-time weather forecasts for your travel destinations so you can pack right and stay safe ,"
   },
   { 
     imgUrl: GuideImg,
     title: "Best Tour Guide",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    desc: "Our certified, knowledgeable, and friendly tour guides are passionate about creating unforgettable travel memories.",
   },
 {
     imgUrl: customizationImg,
     title: "Customization",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    desc: "Customize your trip your way. We create personalized packages for solo travelers, families, and groups—just choose and go!",
 },
 ]
 

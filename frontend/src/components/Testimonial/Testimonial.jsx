@@ -34,40 +34,31 @@ const Testimonials = () => {
     }
 return <Slider {...settings}>
 <div className = "testimonial py-4 px-3">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit,
-explicabo provident hic distinctio molestias voluptates nobis alias
-placeat suscipit earum debitis recusandae voluptate illum expedita
-corrupti aliquid doloribus delectus?</p>
+<p>Travel World made our honeymoon stress-free and absolutely magical. Every detail was handled with care.</p>
 <div className="d-flex align-items-center gap-4 mt-3">
     <img src={ava01} className="w-25 h-25 rounded-2" alt="" />
     <div>
-    <h6 className="mb-0 mt-3">John Doe</h6>
+    <h6 className="mb-0 mt-3">Tirth Tilva</h6>
     <p>Customer</p>
     </div>
 </div>
 </div>
 <div className = "testimonial py-4 px-3">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit,
-explicabo provident hic distinctio molestias voluptates nobis alias
-placeat suscipit earum debitis recusandae voluptate illum expedita
-corrupti aliquid doloribus delectus?</p>
+<p>From booking to exploring, Travel World was with us at every step. Our trip to Manali was perfectly organized.</p>
 <div className="d-flex align-items-center gap-4 mt-3">
     <img src={ava02} className="w-25 h-25 rounded-2" alt="" />
     <div>
-    <h6 className="mb-0 mt-3">John Doe</h6>
+    <h6 className="mb-0 mt-3">User</h6>
     <p>Customer</p>
     </div>
 </div>
 </div>
 <div className = "testimonial py-4 px-3">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit,
-explicabo provident hic distinctio molestias voluptates nobis alias
-placeat suscipit earum debitis recusandae voluptate illum expedita
-corrupti aliquid doloribus delectus?</p>
+<p>We loved how Travel World crafted our itinerary exactly how we wanted it — flexible, fun, and full of surprises.</p>
 <div className="d-flex align-items-center gap-4 mt-3">
     <img src={ava03} className="w-25 h-25 rounded-2" alt="" />
     <div>
-    <h6 className="mb-0 mt-3">John Doe</h6>
+    <h6 className="mb-0 mt-3">Yash Patel</h6>
     <p>Customer</p>
     </div>
 </div>

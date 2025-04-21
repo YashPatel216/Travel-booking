@@ -42,8 +42,7 @@ const Footer = () => {
       <Col lg="3">
       <div className="logo">
           <img src={logo} alt="" />
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.
-          Commodi, enim .</p>
+          <p>With years of expertise, personalized service, and a passion for exploration, we design extraordinary travel experiences across the globe.</p>
           <div className="social_links d-flex align-items-center gap-4">
           <span>
           <Link to='#'><i class="ri-youtube-line"></i></Link>
