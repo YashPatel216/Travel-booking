@@ -160,7 +160,7 @@ const Tourdetails = () => {
                 </div>
 
               </div>
-            </Col>
+            </Col> 
             <Col lg='4'>
               <Booking tour={tour} avgRating={avgRating} />
             </Col>

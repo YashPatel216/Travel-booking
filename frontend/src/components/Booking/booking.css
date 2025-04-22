@@ -70,3 +70,9 @@
     font-weight: 700 !important;
     font-size: 1.1rem !important;
 }
+.btn primary__btn {
+    color: aliceblue;
+    border: none !important;
+    border-radius: 50px !important;
+    padding: 0.4rem 1.5rem !important;
+}
