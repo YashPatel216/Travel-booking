@@ -42,10 +42,12 @@ ul {
 }
 
 .primary__btn {
-  background: var(--secondary-color) !important;
+   background: var(--text-color) !important;  
   border: none !important;
+  /* color:var(--text-color); */
   border-radius: 50px !important;
   padding: 0.4rem 1.5rem !important;
+  color: bisque;
 }
 
 .primary__btn a {
