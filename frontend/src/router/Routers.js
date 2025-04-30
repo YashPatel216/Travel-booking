@@ -5,7 +5,7 @@ import Home from '../pages/Home';
 import Tours from '../pages/Tours';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
-import Searchresult from '../pages/SearchResult';
+import Searchresult from '../pages/SearchResult.jsx';
 import Tourdetails from '../pages/TourDetails';
 import ThankYou from '../pages/ThankYou';
 import MyBookings from '../pages/my-Booking';
