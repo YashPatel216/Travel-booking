@@ -18,7 +18,7 @@ const UserManagement = () => {
 
   const fetchUsers = async () => {
     try {
-      const res = await axios.get('http://localhost:4000/api/users', {
+      const res = await axios.get('https://travel-booking-backend-ge37.onrender.com/api/users', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         }
@@ -35,7 +35,7 @@ const UserManagement = () => {
   const handleDeleteUser = async (id) => {
     if (!window.confirm('Are you sure you want to delete this user?')) return;
     try {
-      await axios.delete(`http://localhost:4000/api/users/${id}`, {
+      await axios.delete(`https://travel-booking-backend-ge37.onrender.com/api/users/${id}`, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         }
@@ -104,7 +104,7 @@ const TourManagement = () => {
 
   const fetchTours = async () => {
     try {
-      const res = await axios.get('http://localhost:4000/api/tours');
+      const res = await axios.get('https://travel-booking-backend-ge37.onrender.com/api/tours');
       setTours(res.data.data);
     } catch (err) {
       console.error('Failed to fetch tours', err);
@@ -122,8 +122,8 @@ const TourManagement = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const url = editingId
-      ? `http://localhost:4000/api/tours/${editingId}`
-      : 'http://localhost:4000/api/tours';
+      ? `https://travel-booking-backend-ge37.onrender.com/api/tours/${editingId}`
+      : 'https://travel-booking-backend-ge37.onrender.com/api/tours';
 
     try {
       if (editingId) {
@@ -150,7 +150,7 @@ const TourManagement = () => {
   const handleDelete = async (id) => {
     if (!window.confirm('Are you sure you want to delete this tour?')) return;
     try {
-      await axios.delete(`http://localhost:4000/api/tours/${id}`);
+      await axios.delete(`https://travel-booking-backend-ge37.onrender.com/api/tours/${id}`);
       fetchTours();
     } catch (err) {
       console.error('Failed to delete tour:', err);
