@@ -65,7 +65,16 @@ const Booking = ({ tour, avgRating }) => {
             <input type="text" placeholder="Full Name" id="fullName" required onChange={handleChange} />
           </FormGroup>
           <FormGroup>
-            <input type="number" placeholder="Phone" id="phone" required onChange={handleChange} />
+          <input
+          type="tel"
+          placeholder="Phone"
+          id="phone"
+          pattern="[0-9]{10}"
+          maxLength="10"
+          required
+          onChange={handleChange}
+          title="Phone number must be exactly 10 digits"
+        />
           </FormGroup>
           <FormGroup className="d-flex align-items-center gap-3">
             <input type="date" id="bookAt" required min={minDate} onChange={handleChange} />

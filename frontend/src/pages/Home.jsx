@@ -131,7 +131,7 @@ const Home = () => {
 </Row>
 </Container>
 </section>
-<Newsletter/>
+
     </>
   )
 };
