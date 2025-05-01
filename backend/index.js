@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 8000;
 const corsOptions = {
-    origin: 'https://zippy-profiterole-4f5df3.netlify.app/',
+    origin: true,
     credentials: true
 }
 app.use('/tour-images', express.static('tour-images'));
