@@ -12,21 +12,24 @@ A full-stack *Travel Booking System* built with the *MERN stack* (MongoDB, Expre
 ## 🖼 Screenshots
 
 ### 🔹 Home Page
-![Uploading Home_Page.png…]()
+<img width="948" height="424" alt="Home_Page" src="https://github.com/user-attachments/assets/be066b8a-b29e-4840-91d7-2babe43c6624" />
+
 
 
 ### 🔹 Featured Tour
-<img width="1305" height="868" alt="Featured Tour" src="https://github.com/user-attachments/assets/75d42f85-0061-4258-bd3b-b559f135f01d" />
+<img width="548" height="404" alt="Featured_Tours" src="https://github.com/user-attachments/assets/b3c843e5-9c13-4e75-9882-29eeedc98681" />
 
 
 ### 🔹 Booking
-<img width="856" height="876" alt="Booking" src="https://github.com/user-attachments/assets/f22e1285-72ba-49b5-9a96-012d56b85112" />
+<img width="946" height="400" alt="My_Bookings" src="https://github.com/user-attachments/assets/eddb7f02-f0e4-4f79-9ae7-3af1826f1625" />
 
 
 ### 🔹 Admin Panel
-<img width="1875" height="863" alt="admin 1" src="https://github.com/user-attachments/assets/405d8ca2-45f2-481e-a889-632c4eb8c869" />
-<img width="1882" height="847" alt="admin 2" src="https://github.com/user-attachments/assets/dc72f3f3-5cb7-4c15-877b-258c347415e3" />
-<img width="1863" height="870" alt="admin 3" src="https://github.com/user-attachments/assets/afe0ddbe-17eb-45a8-8b75-b7c3afe94286" />
+<img width="947" height="428" alt="Admin" src="https://github.com/user-attachments/assets/9f0e3bb9-743a-4563-b36e-51b2495c0d6a" />
+<img width="947" height="416" alt="admin_all_tour" src="https://github.com/user-attachments/assets/085ff541-fdd6-4fc8-b1f5-0a050b4f3a7d" />
+<img width="952" height="386" alt="admin_tour" src="https://github.com/user-attachments/assets/d3ddb4a2-4a44-4145-b41c-b61ac57847b1" />
+<img width="932" height="371" alt="admin_user_management" src="https://github.com/user-attachments/assets/8b12ad10-ca34-400f-90c6-b19b62544919" />
+
 
 
 
@@ -62,7 +65,3 @@ A full-stack *Travel Booking System* built with the *MERN stack* (MongoDB, Expre
   - Built with Tailwind CSS to adapt across devices
 - 🚫 *Secure Routing*
   - Backend route protection using middlewares
-
----
-
-## 📁 Folder Structure
