@@ -23,7 +23,8 @@ A full-stack *Travel Booking System* built with the *MERN stack* (MongoDB, Expre
 
 
 ### 🔹 Booking
-<img width="717" height="367" alt="My_Bookings" src="https://github.com/user-attachments/assets/70f596d6-086a-474a-a66a-b0eff637cf2a" />
+<img width="769" height="427" alt="My_Bookings" src="https://github.com/user-attachments/assets/1c27e815-85bb-4424-8b7f-f1333ee40199" />
+
 
 
 
