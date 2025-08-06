@@ -5,8 +5,10 @@ A full-stack *Travel Booking System* built with the *MERN stack* (MongoDB, Expre
 ---
 
 ## 🚀 Live Preview
-🔗 https://travelworldin.netlify.app/
-
+🔗 https://gleeful-beignet-6155b2.netlify.app/home
+For Admin Use:
+Email:admin@gmail.com
+Password:12345
 ---
 
 ## 🖼 Screenshots
