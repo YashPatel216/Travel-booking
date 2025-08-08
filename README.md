@@ -56,16 +56,32 @@ A full-stack *Travel Booking System* built with the *MERN stack* (MongoDB, Expre
 ---
 
 ## ✨ Features
+🔐 Secure Authentication & Role Management
 
-- 🔐 *JWT Authentication & Authorization*
-  - Users & Admins with secure login
-- 📅 *Tour Listings*
-  - Dynamic data fetched from backend
-- 📂 *Bookings Management*
-  - Personalized dashboard to view and manage user bookings
-- 🛠 *Admin Panel*
-  - Manage tours, users, and bookings (CRUD)
-- 📱 *Responsive UI*
-  - Built with Tailwind CSS to adapt across devices
-- 🚫 *Secure Routing*
-  - Backend route protection using middlewares
+   Implemented JWT-based authentication for secure login/logout and protected routes.
+
+   Enabled role-based access control, restricting admin functionality from regular users.
+
+🧭 Dynamic Tour Discovery
+
+   Users can browse, filter, and search available tours using data fetched from the backend.
+
+   Integrated clean UI with loading states and error handling.
+
+🧾 User Dashboard - My Bookings
+
+   Personalized user dashboard to view, manage, and cancel bookings in real time.
+
+   Booking data persisted in MongoDB and dynamically rendered on the frontend.
+
+🛠️ Admin Panel for Tour & User Management
+
+   Admins can create, update, and delete tours and view/manage all registered users.
+
+   Admin panel built with protected routes and server-side validation.
+
+🧩 RESTful APIs & Modular Backend
+
+   Developed structured, reusable, and scalable RESTful API endpoints using Express.js.
+
+   Middleware used for authentication, error handling, and route protection.
